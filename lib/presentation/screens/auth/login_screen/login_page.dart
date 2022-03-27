@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "Please Sign in to continue",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 14.sp,
                 ),
               ),
@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "email address",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "Password",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Text(
                   "Forgot password?",
                   style: TextStyle(
-                    color: AppColors.primaryColor,
+                    color: AppColors.darkElv1,
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                   ),
@@ -122,7 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                     TextSpan(
                       text: "Don't have an account?",
                       style: TextStyle(
-                        color: AppColors.primaryColor,
+                        color: AppColors.darkElv1,
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                       ),

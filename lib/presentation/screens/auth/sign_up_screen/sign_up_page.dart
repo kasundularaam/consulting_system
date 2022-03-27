@@ -45,7 +45,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text(
                 "Please fill the fields below here",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 14.sp,
                 ),
               ),
@@ -55,7 +55,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text(
                 "Full Name",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -69,7 +69,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text(
                 "email address",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -83,7 +83,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text(
                 "Password",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -98,7 +98,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text(
                 "Confirm Password",
                 style: TextStyle(
-                  color: AppColors.primaryColor,
+                  color: AppColors.darkElv1,
                   fontSize: 12.sp,
                 ),
               ),
@@ -123,14 +123,14 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: Text(
                   "Forgot password?",
                   style: TextStyle(
-                    color: AppColors.primaryColor,
+                    color: AppColors.darkElv1,
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
               ),
               SizedBox(
-                height: 5.h,
+                height: 2.h,
               ),
               Center(
                 child: RichText(
@@ -138,7 +138,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     TextSpan(
                       text: "Already have an account?",
                       style: TextStyle(
-                        color: AppColors.primaryColor,
+                        color: AppColors.darkElv1,
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                       ),
