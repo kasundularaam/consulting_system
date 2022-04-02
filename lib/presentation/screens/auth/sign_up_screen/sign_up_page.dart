@@ -22,7 +22,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.lightColor,
+      backgroundColor: AppColors.lightElv0,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 5.w),
         child: SafeArea(
