@@ -1,3 +1,1 @@
-// Dummy file
-
-class DataProvider {}
+const String socketAddr = "http://127.0.0.1:3000";

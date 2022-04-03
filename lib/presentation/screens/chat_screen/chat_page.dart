@@ -1,12 +1,11 @@
-import 'dart:math';
-
-import 'package:consulting_system/data/models/message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../core/themes/app_colors.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../data/models/message.dart';
+import '../../../data/socket/message_socket.dart';
 import 'widgets/message_card.dart';
 
 class ChatPage extends StatefulWidget {
@@ -19,14 +18,27 @@ class ChatPage extends StatefulWidget {
 class _ChatPageState extends State<ChatPage> {
   TextEditingController messageController = TextEditingController();
   List<Message> messages = [];
+  MessageSocket messageSocket = MessageSocket();
 
   sendMessage() {
     final String messageTxt = messageController.text.trim();
-    Random random = Random();
-    bool isMe = random.nextBool();
-    messages.insert(0, Message(message: messageTxt, isMe: isMe));
+    Message message = Message(message: messageTxt, isMe: true);
+    messages.insert(0, message);
+    messageSocket.sendMessage(message: message);
     setState(() {});
     messageController.clear();
+  }
+
+  @override
+  void initState() {
+    messageSocket.connect();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    messageSocket.dispose();
+    super.dispose();
   }
 
   @override
